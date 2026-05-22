@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Technology Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f1ea;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #8b5e3c;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #6f472c;
+    }
+
+    nav {
+      background: #3e2723;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #5d4037;
+      font-size: 2.2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #6d4c41;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .contact {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    button {
+      padding: 14px;
+      background: #6d4c41;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #4e342e;
+    }
+
+    footer {
+      background: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Coffee Technology Hub</h1>
+      <p>Exploring innovation, quality management, coffee processing, and modern coffee technology solutions.</p>
+      <a href="#services" class="btn">Explore More</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Coffee Technology</h2>
+    <div class="about">
+      <div>
+        <p>
+          Coffee technology combines science, innovation, and quality management to improve coffee production,
+          processing, storage, roasting, and brewing. This website highlights modern approaches used in the coffee industry.
+        </p>
+        <br />
+        <p>
+          Learn about coffee quality testing, sustainable farming practices, processing technologies,
+          roasting systems, and digital solutions transforming the coffee sector.
+        </p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200&auto=format&fit=crop" alt="Coffee beans" />
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Coffee Technology Areas</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop" alt="Coffee roasting" />
+        <div class="card-content">
+          <h3>Coffee Roasting</h3>
+          <p>Understanding roasting profiles, flavor development, and roasting equipment technology.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop" alt="Coffee quality" />
+        <div class="card-content">
+          <h3>Quality Management</h3>
+          <p>Techniques for maintaining coffee quality through grading, testing, and quality assurance systems.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?q=80&w=1200&auto=format&fit=crop" alt="Coffee processing" />
+        <div class="card-content">
+          <h3>Processing Technology</h3>
+          <p>Modern methods in pulping, drying, fermentation, and coffee bean storage systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technology">
+    <h2 class="section-title">Modern Coffee Innovations</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <h3>Smart Farming</h3>
+          <p>Use of sensors, data analysis, and automation to improve coffee farming productivity.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Digital Quality Tracking</h3>
+          <p>Technology solutions for tracking coffee quality from farm to consumer.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Sustainable Production</h3>
+          <p>Eco-friendly technologies supporting sustainable coffee production and processing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Coffee Technology Hub | Designed for GitHub Hosting</p>
+  </footer>
+
+</body>
+</html>
